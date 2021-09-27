@@ -6,7 +6,7 @@
 It took me six months, a lot of sleepless nights, and I ended up having to write my own debugger to get the answers that I needed, but I finally found the source of the race condition that's been plaguing older Mac Pros (and others) using Big Sur 11.3+ and Monterey.  I still don't know why this problem doesn't seem to appear on newer systems;  my focus has been on finding the problem and creating a solution, and the question of newer systems' success seems like an academic exercise for someone with more time on their hands.
 
 The patch posted here is intended to be incorporated into an OpenCore `config.plist` file.  If you need assistance with this task, please use one (or more) of the following resources:
-* [The SurPlus thread on MacRumors](https://forums.macrumors.com/)
+* [The SurPlus thread on MacRumors](https://forums.macrumors.com/threads/surplus-the-big-sur-monterey-fix-youve-been-waiting-for.2313858/)
 * [The OpenCore documentation](https://dortania.github.io/docs/latest/Configuration.html)
 * [The OpenCore thread on MacRumors](https://forums.macrumors.com/threads/opencore-on-the-mac-pro.2207814/)
 * [The OpenCore Legacy Patcher (OCLP) site](https://dortania.github.io/OpenCore-Legacy-Patcher/)
@@ -14,7 +14,7 @@ The patch posted here is intended to be incorporated into an OpenCore `config.pl
 
 The patch itself appears at the bottom of this page, in a format suitable for cutting-and-pasting into the appropriate location in an OpenCore `config.plist` file.
 
-Questions, comments, or discussion about the "race condition" bug or this patch should be directed to [the SurPlus thread on MacRumors](https://forums.macrumors.com/).
+Questions, comments, or discussion about the "race condition" bug or this patch should be directed to [the SurPlus thread on MacRumors](https://forums.macrumors.com/threads/surplus-the-big-sur-monterey-fix-youve-been-waiting-for.2313858/).
 
 If this information or the patch extends the usable life of your classic Mac, or you find other value in them, [donations are gratefully accepted](https://www.paypal.com/biz/fund?id=YK86GAKSYK3SU).  (To be clear, I am not a tax-exempt organization, charity, or non-profit, and there is no tax benefit to you should you choose to donate - just my heartfelt thanks.)
 
