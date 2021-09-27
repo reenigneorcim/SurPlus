@@ -3,7 +3,7 @@
 
 26 September 2021
 
-It took me six months, a lot of sleepless nights, and I ended up having to write my own debugger to get the answers that I needed, but I finally found the source of the race condition that's been plaguing older Mac Pros (and others) using Big Sur 11.3+ and Monterey.  I still don't know why this problem doesn't seem to appear on newer systems;  my focus has been on finding the problem and creating a solution, and the question of newer systems' success seems like an academic exercise for someone with more time on their hands.
+It took me six months, a lot of sleepless nights, and I ended up having to write my own debugger to get the answers that I needed, but I finally found the source of the race condition that's been plaguing older Mac Pros (and others) using Big Sur 11.3+ and Monterey.  ~~I still don't know why this problem doesn't seem to appear on newer systems;  my focus has been on finding the problem and creating a solution, and the question of newer systems' success seems like an academic exercise for someone with more time on their hands.~~ (Thanks to insight from @vit9696, it seems that newer Macs don't suffer from this problem because those CPUs support the `rdrand` instruction, meaning they don't need floating-point access during early boot.)
 
 The patch posted here is intended to be incorporated into an OpenCore `config.plist` file.  If you need assistance with this task, please use one (or more) of the following resources:
 * [The SurPlus thread on MacRumors](https://forums.macrumors.com/threads/surplus-the-big-sur-monterey-fix-youve-been-waiting-for.2313858/)
@@ -250,4 +250,6 @@ The SurPlus patch for both `Big Sur` and `Monterey` (through Beta 7, at least):
 
 First, let's be realistic - it's unreasonable to expect Apple to make modifications to MacOS because of a problem that seems to only affect unsupported systems.  Patches like this are probably the best path forward for these older systems.
 
-That being said, I have yet to see any reason why this problem could not manifest itself on a supported system.  It may simply be that the newer systems are fast enough that this problem never shows up, or there may be some piece of this that I've overlooked.  In any case, it's a definite flaw for there to be a circular dependency like this, and I hope Apple will consider removing it (there are several possible means to accomplish this).  (I'm not holding my breath, though.)
+~~That being said, I have yet to see any reason why this problem could not manifest itself on a supported system.  It may simply be that the newer systems are fast enough that this problem never shows up, or there may be some piece of this that I've overlooked.  In any case, it's a definite flaw for there to be a circular dependency like this, and I hope Apple will consider removing it (there are several possible means to accomplish this).  (I'm not holding my breath, though.)~~
+
+Update: Thanks to insight from @vit9696, it seems that newer models are unaffected by this bug because those CPUs support the `rdrand` instruction, meaning they don't require FP access during early boot.  From Apple's perspective, the race condition fixed by the SurPlus patch is not a bug, since it doesn't affect supported systems.  Therefore, Apple has no reason to address this issue at all.
