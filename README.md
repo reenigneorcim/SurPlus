@@ -14,6 +14,8 @@ The patch posted here is intended to be incorporated into an OpenCore `config.pl
 
 The patch itself appears at the bottom of this page, in a format suitable for cutting-and-pasting into the appropriate location in an OpenCore `config.plist` file.
 
+Questions, comments, or discussion about the "race condition" bug or this patch should be directed to [the SurPlus thread on MacRumors](https://forums.macrumors.com/).
+
 If this information or the patch extends the usable life of your classic Mac, or you find other value in them, [donations are gratefully accepted](https://www.paypal.com/biz/fund?id=YK86GAKSYK3SU).  (To be clear, I am not a tax-exempt organization, charity, or non-profit, and there is no tax benefit to you should you choose to donate - just my heartfelt thanks.)
 
 ------------
