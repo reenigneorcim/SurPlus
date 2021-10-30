@@ -18,6 +18,8 @@ Questions, comments, or discussion about the "race condition" bug or this patch 
 
 If this information or the patch extends the usable life of your classic Mac, or you find other value in them, [donations are gratefully accepted](https://www.paypal.com/biz/fund?id=YK86GAKSYK3SU).  (To be clear, I am not a tax-exempt organization, charity, or non-profit, and there is no tax benefit to you should you choose to donate - just my heartfelt thanks.)
 
+<b>Update 30oct21</b> - Monterey 12.1b1 was seeded to developers this week, and adds a new wrinkle to this ongoing mess.  See [this MacRumors thread](https://forums.macrumors.com/threads/monterand-probably-the-start-of-an-ongoing-saga.2320479/) for more details (a writeup similar to this one will eventually appear here, either as a separate README or a separate repository).  Also, I have updated the `MaxKernel` values in the enclosed SurPlus patches to 21.2.0, allowing them to be applied to 12.1b1.
+
 ------------
 
 <h2>The problem and solution for non-programmers:</h2>
@@ -190,7 +192,7 @@ The SurPlus patch for both `Big Sur` and `Monterey` (through Beta 7, at least):
 				<data>
 				</data>
 				<key>MaxKernel</key>
-				<string>21.1.0</string>
+				<string>21.2.0</string>
 				<key>MinKernel</key>
 				<string>20.4.0</string>
 				<key>Replace</key>
@@ -226,7 +228,7 @@ The SurPlus patch for both `Big Sur` and `Monterey` (through Beta 7, at least):
 				<data>
 				</data>
 				<key>MaxKernel</key>
-				<string>21.1.0</string>
+				<string>21.2.0</string>
 				<key>MinKernel</key>
 				<string>20.4.0</string>
 				<key>Replace</key>
