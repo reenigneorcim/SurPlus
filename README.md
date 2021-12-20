@@ -20,6 +20,8 @@ If this information or the patch extends the usable life of your classic Mac, or
 
 <b>Update 30oct21</b> - Monterey 12.1b1 was seeded to developers this week, and adds a new wrinkle to this ongoing mess.  See [this MacRumors thread](https://forums.macrumors.com/threads/monterand-probably-the-start-of-an-ongoing-saga.2320479/) for more details (a writeup similar to this one will eventually appear here, either as a separate README or a separate repository).  Also, I have updated the `MaxKernel` values in the enclosed SurPlus patches to 21.2.0, allowing them to be applied to 12.1b1.
 
+<b>Update 20dec21</b> - It appears that the released version of Monterey 12.1 does not require the SurPlus patch.  While this may change in a subsequent release, it's certainly welcome news.  Also, note that the MonteRand patch referenced in my 30oct21 update is only required for 12.1b1;  other betas and releases do not exhibit the problem that MonteRand addresses.
+
 ------------
 
 <h2>The problem and solution for non-programmers:</h2>
